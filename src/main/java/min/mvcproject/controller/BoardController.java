@@ -79,7 +79,7 @@ public class BoardController {
     public String modify(){
 
 
-        return "board/modify";
+        return "";
     }
 
 

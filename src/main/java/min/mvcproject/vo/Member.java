@@ -1,5 +1,7 @@
 package min.mvcproject.vo;
 
+import org.springframework.stereotype.Service;
+
 import java.io.Serializable;
 
 public class Member implements Serializable {

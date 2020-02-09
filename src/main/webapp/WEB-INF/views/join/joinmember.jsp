@@ -119,17 +119,19 @@
                             <div class="form-group row">
                                 <label for="captcha" class="col-2 col-form-label text-right">자동 가입방지</label>
                                 <img src="<c:url value='/join/showcaptcha' />" style="margin-bottom: 10px" />
-                                <input type="text" id="captcha" name="captcha" class="form-control col-4" style="margin-left: 150px">
-                                &nbsp;
+                            </div>
+                            <div class="form-group row">
+                                <div class="row" style="color:red; font-size:12px; margin-left:165px">${capmsg}</div>
+                            </div>
+                            <div class="form-group row">
+                                <input type="text" id="captcha" name="captcha" class="form-control col-4" style="margin-left: 150px"> &nbsp;
                                 <button type="button" class="btn btn-dark"><i class="fa fa-question-circle"></i> 다른 captcha 보기</button>
-                                <div style="color:red; font-size:12px; margin-left:165px">${capmsg}</div>
                             </div>
                         </div>
                     </div>
-
                     <div class="row" style="margin-top: 80px ">
                         <div class="col text-center">
-                            <button type="button" class="btn btn-primary" id="newjoinbtn"><i class="fa fa-check"></i> 입력완료</button>
+                            <button type="button" class="btn btn-primary" id="newjoinbtn"><i class="fa fa-check"></i> 입력완료</button> &nbsp;
                             <button type="button" class="btn btn-danger"><i class="fa fa-remove"></i> 취소하기</button>
                         </div>
 
@@ -242,12 +244,10 @@
     
         <!--입력완료(newjoinbtn)를 클릭하면 일어나는 행동. j쿼리문-->
     <script>
-        $(function() {
-            $('#newjoinbtn').on('click',
-                function(e) {joinfrmcheck();});
-
-
-        });
+        // $(function() {
+        //     $('#newjoinbtn').on('click',
+        //         function(e) {joinfrmcheck();});
+        // });
     </script>
 
 </body></html>

@@ -39,7 +39,7 @@ public class CaptchaUtil {
             Random r = new Random();
             String token = Long.toString(r.nextLong(), 36);
             ch = token.substring(1,8);
-            System.out.println(token+" / "+ch); //확인용
+//            System.out.println(token+" / "+ch); //확인용
         }
 
         //이미지 생성

@@ -8,7 +8,7 @@
                 <button class="btn btn-light" type="button" data-dismiss="modal">닫기</button> <!--data-dismiss="modal"을 하면 모달창이 닫김-->
             </div>
             <div class="modal-body">
-                <form id="loginfrm" name="loginfrm" method="post" action="<%=baseurl%>/proclogin.jsp">
+                <form id="loginfrm" name="loginfrm" method="post">
                     <div class="form-group row text-center">
                         <label for="uid" class="col-form-label col-4">아이디</label> <!--col-4 컬럼 너비-->
                         <input type="text" id="uid" name="userid" class="form-control col-6">
@@ -41,3 +41,11 @@
         </div>
     </div>
 </div>
+
+    <script src="/resources/js/loginfrm.js"></script>
+    <script>
+    $(function() {
+    $('#loginbtn').on('click',
+    function(e) {loginfrm();});
+    });
+    </script>

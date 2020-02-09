@@ -35,5 +35,15 @@
 
         </ul>
     </nav>
+
+<%--    <script src="/resources/js/loginfrm.js"></script>--%>
 </header>
+
+<%--    <script src="/resources/js/loginfrm.js"></script>--%>
+<%--    <script>--%>
+<%--    $(function() {--%>
+<%--    $('#logoutbtn').on('click',--%>
+<%--    function(e) {gologout();});--%>
+<%--    });--%>
+<%--    </script>--%>
 
